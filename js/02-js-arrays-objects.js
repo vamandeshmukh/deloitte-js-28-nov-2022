@@ -11,7 +11,6 @@
 //     console.log(elem);
 // }
 
-
 const empData = {
     employeeId: 101,
     firstName: 'Sonu',

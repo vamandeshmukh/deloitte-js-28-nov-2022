@@ -57,6 +57,6 @@ const getPrice = (arg) => {
     }, 2000);
 };
 
-getPrice((abc) => {
-    console.log(abc.phonePrice);
+getPrice((aaa) => {
+    console.log(aaa.phonePrice);
 });
