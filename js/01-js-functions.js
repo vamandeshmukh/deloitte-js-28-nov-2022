@@ -74,3 +74,6 @@ funWithCallBack((abc) => {
 // generally, in argument an anonymous function is passed as callback function.
 
 
+
+
+
