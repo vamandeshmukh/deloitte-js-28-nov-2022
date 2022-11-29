@@ -29,3 +29,5 @@ const empData = {
 
 console.log(empData.firstName);
 console.log(empData.phones[0]);
+// console.log(empData);
+

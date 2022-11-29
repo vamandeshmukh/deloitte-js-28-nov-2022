@@ -1,6 +1,9 @@
 
+const fun = (arg) => {
+    console.log(arg.city);
+};
 
 
+fun({city: 'Hyderabad'});
 
-// const fun = (arg) => { console.log(arg.city) };
 
