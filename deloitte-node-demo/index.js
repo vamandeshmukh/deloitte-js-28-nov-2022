@@ -8,6 +8,6 @@ app.listen(port, () => {
 });
 
 app.get('/', (request, response) => {
-    request.send('Welcome to Deloitte node demo app!');
+    response.send('Welcome to Deloitte node demo app!');
 });
 
