@@ -11,3 +11,13 @@ app.get('/', (request, response) => {
     response.send('Welcome to Deloitte node demo app!');
 });
 
+app.get('/home', (request, response) => {
+    response.send('Welcome to Deloitte home!');
+});
+
+app.get('/contact', (request, response) => {
+    response.send('Welcome to Deloitte contact page!');
+});
+
+
+
