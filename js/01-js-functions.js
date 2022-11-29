@@ -19,12 +19,30 @@
 
 // someFun(10);
 
+// number, string, boolean, array, object, function   
 
-const someFun = (arg) => { // number, string, boolean, array, object, function   
-    let output = arg + 10;
-    console.log(output)
+// const someFun = (arg) => { 
+//     let output = arg + 10;
+//     console.log(output)
+// };
+
+// someFun(10);
+
+// let num = 15;
+// someFun(num);
+
+
+const someFun = (arg) => {
+    console.log('someFun called');
+    arg();
 };
 
-someFun(10);
+const anotherFun = () => {
+    console.log('anotherFun called');
+};
+
+someFun(anotherFun);
+
+
 
 
