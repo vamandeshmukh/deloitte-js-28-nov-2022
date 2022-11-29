@@ -31,13 +31,16 @@
 console.log('Start');
 
 const getPrice = () => {
-    return { phonePrice: 100 };
+    setTimeout(() => {
+        return { phonePrice: 100 };
+    }, 2000);
 };
 
 const currentPrice = getPrice();
 
 console.log(currentPrice.phonePrice);
 
+// TypeError: Cannot read properties of undefined (reading 'phonePrice')
 
 
 
