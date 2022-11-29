@@ -4,6 +4,7 @@ class Employee {
     employeeId;
     firstName;
     salary;
+    
 }
 
 // Java style to create object of a class 
