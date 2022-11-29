@@ -3,7 +3,7 @@
 //     console.log(arg.city);
 // };
 
-// // fun({city: 'Hyderabad'});
+// fun({city: 'Hyderabad'});
 
 // fun();
 
@@ -27,25 +27,36 @@
 
 
 // Problem of asynchronous JS 
+// --------------------------
 
-console.log('Start');
+// console.log('Start');
 
-const getPrice = () => {
-    setTimeout(() => {
-        return { phonePrice: 100 };
-    }, 2000);
-};
+// const getPrice = () => {
+//     setTimeout(() => {
+//         return { phonePrice: 100 };
+//     }, 2000);
+// };
 
-const currentPrice = getPrice();
+// const currentPrice = getPrice();
 
-console.log(currentPrice.phonePrice);
+// console.log(currentPrice.phonePrice);
 
 // TypeError: Cannot read properties of undefined (reading 'phonePrice')
 
 
+// Solution 1 : callback function 
+// ------------------------------
 
 
+console.log('Start');
 
+const getPrice = (arg) => {
+    console.log('getPrice called');
+    setTimeout(() => {
+        arg({ phonePrice: 100 });
+    }, 2000);
+};
 
-
-
+getPrice((abc) => {
+    console.log(abc.phonePrice);
+});
