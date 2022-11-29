@@ -13,13 +13,36 @@
 // setTimeout(() => { }, 2000);
 
 
+// Asynchronous JS - 
 
-console.log('One');
+// let phonePrice;
 
-setTimeout(() => {
-    console.log('Two');
-}, 2000);
+// console.log('One');
 
-console.log('Three');
+// setTimeout(() => {
+//     phonePrice = 100;
+// }, 2000);
+
+// console.log(phonePrice);
+
+
+// Problem of asynchronous JS 
+
+console.log('Start');
+
+const getPrice = () => {
+    return { phonePrice: 100 };
+};
+
+const currentPrice = getPrice();
+
+console.log(currentPrice.phonePrice);
+
+
+
+
+
+
+
 
 
